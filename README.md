@@ -10,7 +10,7 @@ npm install --save-dev laravel-mix
 Create a webpack.mix.js file (touch webpack.min.js) in the root of your project and add this content:
 
 const mix = require('laravel-mix');
-
+```
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -26,7 +26,7 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
-
+```
 3. Update NPM scripts
 Update your NPM scripts in package.json:
 
