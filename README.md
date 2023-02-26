@@ -29,7 +29,7 @@ mix.js('resources/js/app.js', 'public/js')
 ```
 3. Update NPM scripts
 Update your NPM scripts in package.json:
-
+```
   "scripts": {
 // //remove these 2 lines  
 -     "dev": "vite",
@@ -44,9 +44,9 @@ Update your NPM scripts in package.json:
      "prod": "npm run production",
      "production": "mix --production"
   }
-
+```
 4. In .env file
-
+```
 - remove lines:
 VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 VITE_PUSHER_HOST="${PUSHER_HOST}"
@@ -60,7 +60,7 @@ MIX_PUSHER_HOST="${PUSHER_HOST}"
 MIX_PUSHER_PORT="${PUSHER_PORT}"
 MIX_PUSHER_SCHEME="${PUSHER_SCHEME}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
-
+```
 5. In file resources/js/bootstrap.js, you must have just these lines:
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
