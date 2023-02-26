@@ -62,6 +62,7 @@ MIX_PUSHER_SCHEME="${PUSHER_SCHEME}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 5. In file resources/js/bootstrap.js, you must have just these lines:
+6. ```
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -94,7 +95,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (process.env.MIX_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
-
+```
 6. Remove Vite and the Laravel Vite Plugin from npm
 npm remove vite laravel-vite-plugin
 
